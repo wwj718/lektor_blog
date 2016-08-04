@@ -1,0 +1,9 @@
+[project]
+name = wwjtest
+
+[servers.ghpages]
+target = ghpages://wwj718/lektor_blog
+
+
+[packages]
+lektor-markdown-highlighter = 0.1

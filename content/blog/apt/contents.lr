@@ -1,0 +1,92 @@
+title: apt
+---
+body:
+
+##修改源地址：
+```
+cp /etc/apt/sources.list /etc/apt/sources.list.bak  
+vim /etc/apt/sources.list
+```
+
+# test
+```python
+import os
+print "hello world"
+```
+
+###官方源
+```
+deb http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ precise-proposed main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ precise-proposed main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ precise-backports main restricted universe multiverse
+```
+
+Ubuntu官方提供的其他软件（第三方闭源软件等）
+
+```
+deb http://archive.canonical.com/ubuntu/ precise partner
+deb http://extras.ubuntu.com/ubuntu/ precise main
+```
+
+
+###中科大：
+```
+deb http://mirrors.ustc.edu.cn/ubuntu/ precise-updates main restricted
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ precise-updates main restricted
+deb http://mirrors.ustc.edu.cn/ubuntu/ precise universe
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ precise universe
+deb http://mirrors.ustc.edu.cn/ubuntu/ precise-updates universe
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ precise-updates universe
+deb http://mirrors.ustc.edu.cn/ubuntu/ precise multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ precise multiverse
+deb http://mirrors.ustc.edu.cn/ubuntu/ precise-updates multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ precise-updates multiverse
+deb http://mirrors.ustc.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
+```
+
+
+###搜狐源：
+```
+deb http://mirrors.sohu.com/ubuntu/ precise-updates main restricted
+deb-src http://mirrors.sohu.com/ubuntu/ precise-updates main restricted
+deb http://mirrors.sohu.com/ubuntu/ precise universe
+deb-src http://mirrors.sohu.com/ubuntu/ precise universe
+deb http://mirrors.sohu.com/ubuntu/ precise-updates universe
+deb-src http://mirrors.sohu.com/ubuntu/ precise-updates universe
+deb http://mirrors.sohu.com/ubuntu/ precise multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ precise multiverse
+deb http://mirrors.sohu.com/ubuntu/ precise-updates multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ precise-updates multiverse
+deb http://mirrors.sohu.com/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ precise-backports main restricted universe multiverse
+```
+
+###网易源：
+```
+deb http://mirrors.163.com/ubuntu/ precise-updates main restricted
+deb-src http://mirrors.163.com/ubuntu/ precise-updates main restricted
+deb http://mirrors.163.com/ubuntu/ precise universe
+deb-src http://mirrors.163.com/ubuntu/ precise universe
+deb http://mirrors.163.com/ubuntu/ precise-updates universe
+deb-src http://mirrors.163.com/ubuntu/ precise-updates universe
+deb http://mirrors.163.com/ubuntu/ precise multiverse
+deb-src http://mirrors.163.com/ubuntu/ precise multiverse
+deb http://mirrors.163.com/ubuntu/ precise-updates multiverse
+deb-src http://mirrors.163.com/ubuntu/ precise-updates multiverse
+deb http://mirrors.163.com/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ precise-backports main restricted universe multiverse
+```
+
+##更新：
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
